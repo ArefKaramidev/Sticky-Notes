@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Vazir-FD";
+  src: url("./fonts/Vazir-Regular-FD.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Vazir-FD";
+}
+
+body {
+  /* background-color: #424242; */
+  background-image: repeating-linear-gradient(to right, pink, #0095ff);
+  direction: rtl;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+#app .note {
+  height: 200px;
+  color: #212121;
+  border-radius: 10px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+#app #add-note {
+  background-color: rgb(228, 247, 167);
+  color: goldenrod;
+  border-radius: 10px;
+  border: none;
+  font-size: 100px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+#app #add-note:hover {
+  background-color: #535353;
+}
+
+@media screen and (min-width: 300px) {
+  #app {
+    align-content: center;
+    justify-content: center;
+  }
+}
